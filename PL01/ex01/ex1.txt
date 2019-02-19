@@ -1,0 +1,5 @@
+1->a)  O output vai ser um de dois 2,0,2, 0,1234,0 ou 0,1234,0 2,0,2. Ao ser criado o fork p, vai ser criado um novo processo.
+Esse processo e o seu pai vâo correr os dois até ao fim. Não sabemos é qual dos dois vai correr primeiro. Pode correr primeiro o processo pai,
+nesse caso vamos ter o segundo output. Pode também correr primeiro o processo filho, nesse caso vamos ter o segundo output. 
+2->b) Sim isso é  garantido, pois caso a linha 9 seja executada esta a correr o processo pai, e dentro dum processo a seqência de execução do código 
+é aquela definida pelo programador.

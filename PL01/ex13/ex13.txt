@@ -1,0 +1,2 @@
+Apenas 1, pois quando a função exec é executada o processo que a chamou é terminado, assim sendo o for não é repetido, chegando apenas uma vez à 
+instrução exec.

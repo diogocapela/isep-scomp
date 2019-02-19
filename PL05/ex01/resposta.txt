@@ -1,0 +1,3 @@
+São criadas 2 threads.
+
+São criados 6 processos.

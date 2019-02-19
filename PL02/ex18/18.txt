@@ -1,0 +1,20 @@
+A primeira parte do programa substitui a escrita
+do programa para o stdout e a leitura para o
+stdin
+
+De seguida é feito um for loop que cria 4
+processos filhos, o pai cria um e cada filha tambem cria um excepto o ultimo, do processo pai e cria tambem mais 4 pipes com os mesmo fd que o pipe inicial, em que o pai
+substitui o fd de escrita com o stdout e o filho o descritor de leitura com o stdin, caso o processo a correr seja o filho, esta salta fora
+do ciclo for e vai construir uma mensagem constituida pelo seu id atribuido pelo ciclo for, o seu pid e o pid do seu pai
+
+esta mensagem vai ser escrita para o processo com o ID 1, porem como foi feito um dup2 a redirecionar o pid 1 para o fd[1], esta mensagem nao vai para 
+o stdout mas sim para o pipe criado no ciclo for.
+
+Algum outro processo depois de fazer o seu proprio write, vai ler do processo 0(stdin), mas como este foi redirecionado para o fd[0], vai ler uma
+das mensagens enviadas por um dos outros processos. 
+
+Vai entao imprimir o processo currente e a mensagem lida no read.
+
+Portanto o output vao ser sim mensagem deste genero Current process = x, data = This is process y with PID z and its parent t.
+
+Não existe uma ordem para estes valores, pois o filho 3 por exemplo, nao vai ler sempre a mensagem do mesmo processo.

@@ -1,0 +1,2 @@
+O output não pode ser sempre sorted e não o podemos garantir, pois não sabemos qual dos processos vai correr primeiro, a única coisa que sabemos
+é que todos os filhos vão terminar antes do processo main.

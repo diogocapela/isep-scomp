@@ -1,0 +1,4 @@
+o processo pai, aquando do ciclo for vai criar 3 filhos. o seu primeiro filho vai criar dois forks, cujo primeiro cria outro e o último nenhum.
+O seu segundo filho vai apenas criar um fork que nao cria nenhum filho.
+O seu terceiro não cria nenhum filho.
+Portanto existem 8 processos, incluindo o pai, devendo entâo ser imprimido "SCOMP" 8 vezes;

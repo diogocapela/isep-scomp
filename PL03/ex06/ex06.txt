@@ -1,0 +1,1 @@
+Tendo em conta que estou a usar uma máquina virtual em que disponibilizei 4 cores do meu processador para essa maquina e o meu computador tem mais de 4 cores o numero ideal de processos a serem usados no exercicio anterior seria 4 de maneira a que um processo corresse em cada core e todos eles corressem em simultaneo sem terem que esperar uns pelos outros.
